@@ -31,18 +31,22 @@ require_once('config.php');
                           
                       <label for="email"><b>Email Address</b></label>
                      <input class="form-control" id="email" type="email" name="email" required>
+                         <label for="password"><b>password</b></label>       
+                <input class="form-control" id="password" type="password" name="password" required>
+
                              <label for="Blood Group"><b>Blood Group</b></label>
                 <input class="form-control" id="Blood Group" type="text" name="Blood Group" required>
-<label for="Age"><b>age</b></label>
-                  <input class="form-control" id="Age" type="int" name="Age" required>
-                <input class="form-control" id="password" type="password" name="password" required>
-
+                           <label for="Age"><b>age</b></label>
+                  <input class="form-control" id="Age" type="text" name="Age" required>
+                 
                  <label for="Phonenumber"><b>Phone Number</b></label>
                 <input class="form-control" id="phonenumber"  type="text" name="phonenumber" required>
+                           <label for="city"><b>city</b></label>
+                  <input class="form-control" id="city" type="text" name="city" required>
+                           <label for="pincode"><b>pincode</b></label>
+                  <input class="form-control" id="pincode" type="text" name="pincode" required>
 
-                <label for="Password"><b>Password</b></label>
-                <input class="form-control" id="password" type="password" name="password" required>
-
+                
                 <hr class="mb-3">
                  <input class="btn btn-primary" type="submit" id="register" name="create" value="Sign Up">
 
@@ -62,8 +66,11 @@ require_once('config.php');
                         var firstname   = $('#firstname').val();
                         var lastname    = $('#lastname').val();
                         var email       = $('#email').val();
-                        var phonenumber = $('#phonenumber').val();
                         var password    = $('#password').val();
+                        var bloodgroup  = $('#bloodgroup').val();
+                        var phonenumber = $('#phonenumber').val();
+                        var city        = $('#city').val();
+                        var pincode     = $('#pincode').val();
 
                                 e.preventDefault();
 
