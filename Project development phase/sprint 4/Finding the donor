@@ -1,9 +1,9 @@
+
 const autocomplete = new google.maps.places.Autocomplete(
 document.getElementById("autocomplete"),
 { types: ["geocode"],
   componentRestrictions: {'country': ['gb']},
   fields: ['place_id', 'geometry', 'formatted_address'] }
 );
-
 autocomplete.addListener("place_changed", searchFromOrigin);
 }
